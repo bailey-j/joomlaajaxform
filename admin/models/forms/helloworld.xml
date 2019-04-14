@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+<fieldset name="hello_form">
+<field
+	name="id"
+	type="hidden"
+/>
+
+<field
+	name="name"
+	type="text"
+	class="inputbox"
+	label="Name"
+	description="Your Name"
+	required="true"
+/>
+
+<field
+	name="detail"
+	type="textarea"
+	class="inputbox"
+	label="Detail"
+	description="Client Detail"
+	required="true"
+	rows="5"
+/>
+
+
+</fieldset>
+</form>

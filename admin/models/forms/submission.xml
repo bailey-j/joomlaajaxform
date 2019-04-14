@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset
+			name = "yate_form"
+			label = "YATE Form Application"
+			>
+		<field
+				name="id"
+				type="hidden"
+			/>		
+		<field
+				name="lastname"
+				type="text"
+				label="Last Name"
+				description="Enter Last Name"
+				size="40"
+				required="true"
+				default=""
+			> </field>
+		<field
+				name="firstname"
+				type="text"
+				label="First Name"
+				description="Enter First Name"
+				size="40"
+				required="true"
+				default=""
+			/>
+		<field
+				name="midname"
+				type="text"
+				label="Middle Name(s)"
+				description="Enter Middle Name(s)"
+				size="40"
+				required="true"
+				default=""
+			/>
+			<!-- -->
+			<field
+				name="address"
+				type="text"
+				label="Address"
+				size="40"
+				required="true"
+				default=""
+			/>
+			<field 
+				name="dob"
+				type="calendar"
+				default="2000-01-01"
+				label="Date of Birth"
+				description=""
+				required="true"
+				showtime="false" 
+				filltable="true"
+			/>
+			<field  name="gender"  type="combobox"  label="Gender"  required="true" size="2" description="Choose Option" >
+				<option value="Male">Male</option>
+				<option value="Female">Female</option>
+			</field>		
+			<field
+				name="nid"
+				type="text"
+				label="National ID #"
+				size="40"
+				required="false"
+				default=""
+			/>
+			<field
+				name="otherid"
+				type="text"
+				label="Other ID #"
+				size="40"
+				required="false"
+				default=""
+			/>
+			
+			<field
+				name="nis"
+				type="text"
+				label="NIS Number"
+				size="40"
+				required="false"
+				default=""
+			/>
+			<field
+				name="homenum"
+				type="text"
+				label="Home Number"
+				size="40"
+				required="false"
+				default=""
+			/>
+			<field
+				name="mobilenum"
+				type="text"
+				label="Mobile Number"
+				size="40"
+				required="true"
+				default=""
+			/>
+			<field
+				name="email"
+				type="text"
+				label="Email Address"
+				size="40"
+				required="false"
+				default=""
+			/>
+			<field
+				name="mother"
+				type="text"
+				label="Name of Mother"
+				size="40"
+				required="false"
+				default=""
+			/>
+			<field
+				name="father"
+				type="text"
+				label="Name of Father"
+				size="40"
+				required="false"
+				default=""
+			/>
+			<field
+				name="guardian"
+				type="text"
+				label="Name of Guardian/ Next of Kin"
+				size="40"
+				required="true"
+				default=""
+			/>
+			<field
+				name="addressnok"
+				type="text"
+				label="Address of Next of Kin"
+				size="40"
+				required="true"
+				default=""
+			/>
+			<field
+				name="nokhomenum"
+				type="text"
+				label="Home Number"
+				size="40"
+				required="false"
+				default=""
+			/>
+			<field
+				name="nokmobnum"
+				type="text"
+				label="Mobile Number"
+				size="40"
+				required="true"
+				default=""
+			/>
+			<field
+				name="nokemail"
+				type="text"
+				label="Next of Kin Email"
+				size="40"
+				required="false"
+				default=""
+			/>
+			<field  name="educlevel"  type="list"  label="Highest Education Level"  required="true" size="5" description="Choose Option" >
+				<option value="Primary">Primary</option>
+				<option value="Lower Secondary">Lower Secondary</option>
+				<option value="Secondary">Secondary</option>
+				<option value="Post Secondary">Post Secondary</option>
+				<option value="Tertiary">Tertiary</option>
+			</field>
+						
+			<field
+				name="numccslc"
+				type="number"
+				label="Number of CCSLC Certificates"
+				size="2"
+				required="true"
+				default="0"
+			/>
+			<field
+				name="numcsec"
+				type="number"
+				label="Number of CSEC Certificates"
+				size="2"
+				required="true"
+				default="0"
+			/>
+			<field 	name="empstatus" type="combobox" label="Employment Status" required="true" size="4" >
+				<option value="Unemployed">Unemployed</option>
+				<option value="Self-employed">Self-employed</option>
+				<option value="Part-Time">Employed (Part-Time)</option>
+				<option value="Full-Time">Employed (Full-Time)</option>
+			</field>
+	
+			<field  name="unemptime" type="combobox" label="Length of Unemployment" required="false" size="5" >
+				<option value="More than 25 months">More than 25 months</option>
+				<option value="19 - 24 months">19 - 24 months</option>
+				<option value="13 - 18 months">13 - 18 months</option>
+				<option value="7 - 12 months">7 - 12 months</option>
+				<option value="1 - 6 months">1 - 6 months</option>
+			</field>
+				
+
+			<field  name="challenges"  type="list"  label="Please choose potential challenges"  multiselect='true' required="true" size="6" description="Choose Option" >
+				<option value="Childcare">Childcare</option>
+				<option value="Employment">Employment</option>
+				<option value="Transportation">Transportation</option>
+				<option value="Health">Health</option>
+				<option value="Other">Other</option>
+				<option value="None">None</option>
+			</field>				
+			
+			
+			<field 	name="childyesno" type="combobox" label="" required="true" >
+				<option value="Yes">YES</option>
+				<option value="No">JNO</option>
+			</field>
+			<field 	name="childnum" type="combobox" label="" required="false" >
+				<option value="1-2">1 - 2</option>
+				<option value="More than 2">More than 2</option>
+			</field>
+			
+			<field  name="childage"  type="combobox"  label=""  required="false" size="3" description="Choose Option" >
+				<option value="0-12 months">0 - 12 months</option>
+				<option value="1-12 years">1 - 12 years</option>
+				<option value="over 12">Over 12 years</option>
+			</field>
+			
+			<field name="programchoice" type="groupedlist" default="" label="Select an option" required='true' description="">
+			  <group label="Kingstown Technical Institute (KTI)">
+				<option value="KTI Electrical Installation">Electrical Installation</option>
+				<option value="KTI Commercial Food Preparation">Commercial Food Preparation</option>
+				<option value="KTI Food and Drinks">Food and Drinks</option>
+				<option value="KTI Plumbing">Plumbing</option>
+				<option value="KTI Data Operations">Data Operations</option>
+			 </group>
+			  <group label="Campden Park Technical Institute (CPTI)">
+				<option value="CPTI Electrical Installation">Electrical Installation</option>
+				<option value="CPTI Food Preparation">Food Preparation</option>
+				<option value="CPTI Food and Beverage">Food and Beverage</option>
+				<option value="CPTI Welding">Welding</option>
+				<option value="CPTI Data Operations">Data Operations</option>
+			  </group >
+			  <group label="Georgetown Technical Institute (GTI)">
+				  <option value="GTI Electrical Installation">Electrical Installation</option>
+				  <option value="GTI Food Preparation">Food Preparation</option>
+				  <option value="GTI Food and Beverage">Food and Beverage</option>
+				  <option value="GTI Plumbing">Plumbing</option>
+				  <option value="GTI Furniture Construction">Furniture Construction</option>
+			  </group >
+			  <group label="Barroullie Technical Institute (BTI)">
+				  <option value="BTI Electrical Installation">Electrical Installation</option>
+				  <option value="BTI Commercial Food Preparation">Commercial Food Preparation</option>
+				  <option value="BTI Garment Production">Garment Production</option>
+				  <option value="BTI House Keeping">House Keeping</option>
+			  </group >
+			</field>
+			
+			<field 	name="publicassist" type="radio" label="" size = "40" required="true" >
+				<option value="Yes">Yes, currently</option>
+				<option value="Not Currently">Not currently, but in the past</option>
+				<option value="Never">No, never</option>
+			</field>
+			
+			
+			<field
+				name="otherinstitute"
+				type="text"
+				label="Institution"
+				size="40"
+				required="false"
+			/>
+		
+			<field
+				name="otherprogramme"
+				type="text"
+				label="Programme"
+				size="40"
+				required="false"
+			/>
+			
+			<field 
+				name="date"
+				type="calendar"
+				default="2019-01-01"
+				label="Today's Date"
+				description=""
+				required="true"
+				showtime="false" 
+				filltable="true"
+			/>
+			-->
+	</fieldset>
+</form>

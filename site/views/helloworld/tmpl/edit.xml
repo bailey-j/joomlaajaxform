@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+<name> SSDA Form</name>
+	<layout title="Yate Form">
+		<message>Yate Form Menu Item</message>
+	</layout>
+	
+</metadata>
+
